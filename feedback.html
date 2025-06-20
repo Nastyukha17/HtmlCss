@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<HTML lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Справочник Css</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="navbar-brand">
+			<a href="/" class="w-logo">
+				<span class="w-logo-p1">Html</span>
+				<span class="w-logo-p2">Css</span>
+			</a>
+		</div>
+		<!-- Выпадающий список начало -->
+		<div class="dropdown">
+			<button class="navbar-item">HTML</button>
+			<div class="dropdown-content">
+				<a href="html-аtributy.html">Атрибуты</a>
+				<a href="html-znacheniya.html">Значения</a>
+				<a href="html-tipy.html">Типы элементов</a>
+			</div>
+		</div>
+		<!-- Выпадающий список конец -->
+		<!-- Выпадающий список начало -->
+		<div class="dropdown">
+			<button class="navbar-item">CSS</button>
+			<div class="dropdown-content">
+				<a href="css-spravochnik.html">Справочник CSS</a>
+				<a href="css-znacheniya.html">Значения свойств</a>
+				<a href="css-funkciy.html">Функции</a>
+				<a href="css-edinicy.html">Единицы CSS</a>
+				<a href="css-tipy.html">Типы элементов</a>
+			</div>
+		</div>
+		<!-- Выпадающий список конец -->
+		<!-- Выпадающий список начало -->
+		<div class="dropdown">
+			<button class="navbar-item">Горячие клавиши</button>
+			<div class="dropdown-content">
+				<a href="hotkeys-windows.html">Windows</a>
+				<a href="hotkeys-vscode.html">VS Code</a>
+			</div>
+		</div>
+		<!-- Выпадающий список конец -->
+		<a href="settings-vscde.html" class="navbar-item">Настройки VS Code</a>
+		<a href="feedback.html" class="navbar-item">Обратная связь</a>
+
+	</nav>
+	<div id="main">
+		<nav class="sidebar">
+			<h5>Полезные ссылки</h5>
+			<a href="https://webref.ru/" target="_blank">WebReference</a>
+			<a href="https://involta.ru/tools/validator-html/" target="_blank"> Валидатор HTML</a>
+			<a href="https://validator.w3.org/#validate_by_input" target="_blank">validator.w3.org</a>
+			<a href="https://code.visualstudio.com/" target="_blank">VS Code</a>
+			<a href="https://transliteration-online.ru/" target="_blank">Транслитерация</a>
+			<a href="https://iconbird.com/" target="_blank">Иконки</a>
+			<a href="https://htmlweb.ru/html/symbols.php" target="_blank"> Спецсимволы Html</a>
+		</nav>
+		<article>
+			<h1>Обратная связь</h1>
+			<div class="container-form">
+				<form action="#">
+					<label for="name">Имя</label>
+					<input type="text" id="name" autocomplete="off" name="firstname" placeholder="Ваше имя...">
+					<label for="name">Фамилия</label>
+					<input type="text" id="lname" name="lastname" placeholder="Ваша Фамилия...">
+
+					<div class="one-item">
+						<input type="radio" name="gender" id="male" value="male" >
+						<label for="male">мужской пол</label>
+						<br>
+						<input type="radio" name="gender" id="female" value="female">
+						<label for="female">женский пол</label>
+					</div>
+
+
+					<label for="old">Возраст</label>
+					<input type="number" min="0" max="120" step="1" name="old" id="old">
+
+					<label for="region">Регион</label>
+					<select name="region" id="region">
+						<option value=""></option>
+						<option value="ДНР">ДНР</option>
+						<option value="Крым">Крым</option>
+						<option value="ЛНР">ЛНР</option>
+					</select>
+
+					<label for="email">E-mail</label>
+					<input type="email" name="email" id="email">
+
+					<label for="password">Пароль</label>
+					<input type="password" name="password" id="password">
+
+					<label for="Birthday">Дата рождения</label>
+					<input type="date" name="Birthday" id="Birthday">
+
+					<div class="one-item">
+						<label for="color">Любимый цвет</label>
+						<input type="color" name="color" id="color" value="#ff0000">
+					</div>
+					<div class="one-item">
+						<p>Выберите курс</p>
+						<input type="checkbox" name="curs" id="html">
+						<label for="html">HTML</label>
+						<br>
+						<input type="checkbox" name="curs" id="css">
+						<label for="css">CSS</label>
+						<br>
+						<input type="checkbox" name="curs" id="cg">
+						<label for="cg">Компьютерная грамотность</label>
+					</div>
+
+					<div class="one-item">
+						<label for="image">Ваше фото</label>
+						<br>
+						<input type="file" name="image" id="image">
+					</div>
+
+					<label for="message">Ваш вопрос</label>
+					<textarea name="message" id="message" rows="10"
+					 placeholder="Что-то напишите..."></textarea>
+
+
+					<input type="submit" value="Отправить">
+				</form>
+			</div>
+		</article>
+	</div>
+	<div class="sidenav">
+	</div>
+	<footer>Сайт-конспект по html и Css &#169; 2025г.</footer>
+</body>
+
+</html>
